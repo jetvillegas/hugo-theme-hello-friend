@@ -8,6 +8,8 @@
   {{ end }}
   {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
 
+<img src="/images/junglecode_logo_black.jpg"/>
+
   {{ if .Content }}
     <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
       {{ .Content }}
@@ -67,3 +69,4 @@
     {{ partial "pagination.html" . }}
   </div>
 {{ end }}
+
